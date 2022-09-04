@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: ivory;
+    color: #242424;
+    font-weight: 300;
+}
+
+.name {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.subname {
+    font-weight: 300;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.bg-grey {
+    background-color: #242424;
+    color: ivory;
+}
+
+.scroll-button {
+    font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
