@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:ital,wght@0,400;1,300&display=swap');
 * {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     background: ivory;
     color: #242424;
     font-weight: 300;
+}
+
+#card-2 {
+    font-family: 'Merriweather', serif;
 }
 
 .name {
@@ -17,10 +21,6 @@ body {
 
 .h-50 {
     height: 50%;
-}
-
-.subname {
-    font-weight: 300;
 }
 
 .justify-space-between {
@@ -34,6 +34,21 @@ body {
 
 .scroll-button {
     font-style: italic;
+}
+.readable-title {
+    @apply block text-lg md:text-xl xl:text-2xl;
+}
+
+.readable-p {
+    @apply block md:text-lg xl:text-xl;
+}
+
+.resume-section-title {
+    @apply block text-xl md:text-3xl xl:text-5xl underline;
+}
+
+.resume-section {
+    @apply block;
 }
 
 @tailwind base;

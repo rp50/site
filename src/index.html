@@ -9,24 +9,52 @@
 </head>
 <body>
     <div id="card-1" class="h-screen p-3" >
-        <div class="bg-grey h-full p-5 flex flex-col">
-            <div class="flex flex-row justify-space-between flex-grow h-auto">
-                <div>
-                    <h1 class="text-8xl name">Robert Paul</h1>
-                    <h2 class="text-2xl">software eng (wip)</h2>
+        <div class="bg-grey h-full p-2 md:p-5 flex flex-col">
+            <div class="flex flex-col md:flex-row md:justify-space-between flex-grow h-auto">
+                <div class="md:flex-grow">
+                    <h1 class="text-4xl md:text-8xl xl:text-9xl name">Robert Paul</h1>
+                    <h2 class="text-lg md:text-2xl xl:text-3xl">software engineer (wip)</h2>
                 </div>
                 <div>
-                    <a class="block hover:animate-pulse" target="_blank" href="https://github.com/robkpaul">github</a>
-                    <a class="block hover:animate-pulse"target="_blank" href="https://www.linkedin.com/in/robkpaul/">linkedin</a>
+                    <a class="md:text-lg xl:text-2xl block hover:animate-pulse" target="_blank" href="https://github.com/robkpaul">github</a>
+                    <a class="md:text-lg xl:text-2xl block hover:animate-pulse"target="_blank" href="https://www.linkedin.com/in/robkpaul/">linkedin</a>
                 </div>
             </div>
             <div class="text-center hover:animate-pulse">
-                <a href="#card-2"><button class="scroll-button">resumé</button></a>
+                <a href="#card-2"><button class="scroll-button md:text-lg xl:text-2xl">resumé</button></a>
             </div>
         </div>
     </div>
-    <div id="card-2" class="h-screen ">
-
+    <div id="card-2" class="h-screen p-8">
+        <div id="work-experience" class="resume-section">
+            <h2 class="resume-section-title">Work Experience</h2>
+            <div class="resume-section-item">
+                <h3 class="readable-title">Launch Intern, Dropbox | Summer 2022</h3>
+                <p class="readable-p">
+                    Built a tool to enable users to import files from Microsoft's OneDrive service into their Dropbox file storage.
+                    <ul class="list-disc list-inside">
+                        <li>Wrote Python backend APIs to interface with the Microsoft Graph to retrieve data from OneDrive.</li>
+                        <li>Implemented UI entry points for the API in React.</li>
+                        <li>Made decisions driven by user data.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="resume-section-item">
+                <h3 class="block readable-title">Support Technician, Chico State ITSS | 2021-Present</h3>
+                <p class="readable-p">Provided technical support to the campus community in a variety of roles such as Lead, Front Desk, and Tier 2 technician.</p>
+            </div>
+        </div>
+        <div id="projects">
+            <h2 class="resume-section-title">Projects</h2>
+            <div class="resume-section-item">
+                <h3 class="readable-title"><a href="https://github.com/robkpaul/CharactersWithoutNumber" target="_blank" class="hover:underline">Characters Without Number </a></h3>
+                <p class="readable-p">A character sheet manager for the tabletop game Worlds Without Number, written in python with Django and utilizing Websockets.</p>
+            </div>
+            <div class="resume-section-item">
+                <h3 class="readable-title"><a href="https://github.com/robkpaul/Modron" target="_blank" class="hover:underline">Modron</a></h3>
+                <p class="readable-p">Developed a Discord chatbot to manage Dungeons and Dragons campaigns utilizing the Discord.py library, and MongoDB as a database to store user data.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
